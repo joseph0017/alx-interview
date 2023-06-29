@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """module for pascal triangle"""
+
+
 def pascal_triangle(n):
-   """pascal triangle"""
+   """pascal triangle function with n as an argument"""
    if n <= 0:
       return []
    triangle = [[1]*(i+1) for i in range(n)]
