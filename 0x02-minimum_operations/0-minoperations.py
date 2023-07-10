@@ -16,8 +16,8 @@ def minOperations(n):
     p = 1
     if n <= 1:
         return 0
-    for i in range(0, n -2):
-        if i%2 == 0:
+    for i in range(0, n - 2):
+        if i % 2 == 0:
             ca = p + i + 5
             summ = ca // 2
     return summ
