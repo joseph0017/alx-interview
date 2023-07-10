@@ -10,7 +10,7 @@ def minOperations(n):
     """
     Given a number n, write a method that calculates the
     fewest number of operations needed to result in
-    exactly n H characters in the file
+    exactly n H characters in the files
     """
     ca = 0
     p = 1
