@@ -12,6 +12,8 @@ def minOperations(n):
     fewest number of operations needed to result in
     exactly n H characters in the files
     """
+    if n <= 0:
+        return 0
     minop = 0
 
     for i in range(2, n + 1):
