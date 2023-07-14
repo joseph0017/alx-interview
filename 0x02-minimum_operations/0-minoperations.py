@@ -12,14 +12,10 @@ def minOperations(n):
     fewest number of operations needed to result in
     exactly n H characters in the files
     """
-    ca = 0
-    p = 1
-    if n <= 1:
-        return 0
-    for i in range(0, n - 2):
-        if i % 2 == 0:
-            ca = p + i + 5
-            summ = ca // 2
-        if n == 4:
-            return 4
-    return summ
+    minop = 0
+
+    for i in range(2, n + 1):
+        while(n % i == 0):
+            minop += i
+            n /= i
+    return minop
