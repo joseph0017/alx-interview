@@ -31,7 +31,6 @@ try:
         count += 1
         if count % 10 == 0:
             print_output(status_code_obj, summation)
-    print_output(status_code_obj, summation)
 
 except KeyboardInterrupt:
     print_output(status_code_obj, summation)
