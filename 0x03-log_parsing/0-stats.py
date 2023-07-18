@@ -7,10 +7,10 @@ import sys
 
 def print_output(status_code, total_size):
     """prints stdout output"""
+    print("File size: {}".format(total_size))
     for code in sorted(status_code.keys()):
         if status_code[code] != 0:
             print("{}: {}".format(code, status_code[code]))
-    print("File size: {}".format(total_size))
 
 
 status_code_obj = {200: 0, 301: 0, 400: 0, 401: 0,
@@ -31,6 +31,7 @@ try:
         count += 1
         if count % 10 == 0:
             print_output(status_code_obj, summation)
+    print_output(status_code_obj, summation)
 
 except KeyboardInterrupt:
     print_output(status_code_obj, summation)
