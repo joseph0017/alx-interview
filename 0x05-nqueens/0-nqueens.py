@@ -41,7 +41,7 @@ if __name__ == "__main__":
     try:
         n = int(sys.argv[1])
     except ValueError:
-        print("N must be an integer")
+        print("N must be a number")
         sys.exit(1)
 
     if n < 4:
