@@ -19,7 +19,7 @@ def is_board_ok(chessboard: list, row: int, col: int):
 
 
 def n_queens(chessboard: list, row: int):
-    """solve the N queens problem"""
+    """solves the N queens problem"""
     n = len(chessboard)
     if row == n:
         result = []
