@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for the island_perimeter method"""
+"""Module for the island_perimeter methods"""
 
 
 def island_perimeter(grid):
